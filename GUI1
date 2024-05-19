@@ -1,0 +1,42 @@
+package gui;
+import java.awt.*;
+
+public class GUI {
+
+    
+    public static void main(String[] args) {
+   Frame frame = new Frame ();
+   Label label1 = new Label ();
+   Label label2 = new Label ();
+   
+   TextField txtfield = new TextField();
+   
+   TextArea txtArea = new TextArea();
+   
+   Choice choice = new Choice();
+   
+   frame.setSize(500,500);
+   frame.setLayout(new FlowLayout());
+   frame.setVisible(true);
+   frame.setTitle("Hello World");
+   
+   label1.setText("Username");
+   label2.setText("Password");
+   
+   txtfield.setPreferredSize(new Dimension(100,30));
+   
+   txtArea.setPreferredSize(new Dimension(250,250));
+   
+   choice.add("Apple");
+   choice.add("Banana");
+   choice.add("Watermelon");
+   
+   frame.add(label1);
+   frame.add(label2);
+   frame.add(txtfield);
+   frame.add(txtArea);
+   frame.add(choice);
+   
+    }
+    
+}
